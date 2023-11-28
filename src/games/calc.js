@@ -1,4 +1,17 @@
 import readlineSync from "readline-sync";
+import sayHello from "../index.js";
+
+const answer = (numberOne, randomOperation, numberTwo) => {
+  switch (randomOperation) {
+    case "+":
+      return numberOne + numberTwo;
+    case "-":
+      return numberOne - numberTwo;
+    case "*":
+      return numberOne * numberTwo;
+    default:
+  }
+};
 
 const playRound = (name) => {
   const operations = ["+", "-", "*"];
@@ -7,11 +20,14 @@ const playRound = (name) => {
   const indexRandom = Math.floor(Math.random() * 3);
   const randomOperation = operations[indexRandom];
   const question = `${numberOne} ${randomOperation} ${numberTwo}`;
+
   console.log("What is the result of the expression?");
   console.log(`Question: ${question}`);
+
   const answerPlayer = readlineSync.question("Your answer: ");
   const answerCorrect = answer(numberOne, randomOperation, numberTwo);
   const isCorrectAnswer = answerCorrect.toString() === answerPlayer.toString();
+
   if (isCorrectAnswer) {
     console.log("Correct!");
     return true;
@@ -23,15 +39,8 @@ const playRound = (name) => {
   }
 };
 
-const answer = (numberOne, randomOperation, numberTwo) => {
-  switch (randomOperation) {
-    case "+":
-      return numberOne + numberTwo;
-    case "-":
-      return numberOne - numberTwo;
-    case "*":
-      return numberOne * numberTwo;
-  }
+const play = () => {
+  sayHello(playRound);
 };
 
-export {playRound}
+export default play;

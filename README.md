@@ -3,4 +3,6 @@
 
 <a href="https://codeclimate.com/github/ilushacomeback/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/9a780c4990692b1a8304/maintainability" /></a>
 
-https://asciinema.org/a/ciIP8HJMrFUSsMy2vC6i0Xfu1
+brain-even: https://asciinema.org/a/ciIP8HJMrFUSsMy2vC6i0Xfu1
+
+brain-calc: https://asciinema.org/a/JY9pC89w7czqe1GyoSTWvk3aS
