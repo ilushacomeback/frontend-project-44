@@ -21,7 +21,6 @@ const playRound = (name) => {
   const randomOperation = operations[indexRandom];
   const question = `${numberOne} ${randomOperation} ${numberTwo}`;
 
-  console.log("What is the result of the expression?");
   console.log(`Question: ${question}`);
 
   const answerPlayer = readlineSync.question("Your answer: ");
@@ -39,8 +38,12 @@ const playRound = (name) => {
   }
 };
 
+const getMission = () => {
+  console.log("What is the result of the expression?");
+};
+
 const play = () => {
-  sayHello(playRound);
+  sayHello(playRound, getMission);
 };
 
 export default play;

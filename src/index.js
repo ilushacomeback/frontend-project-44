@@ -10,10 +10,11 @@ const getGameOver = (name, playRound) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-const sayHello = (playRound) => {
+const sayHello = (playRound, getMission) => {
   console.log("Welcome to the Brain Games!");
   const name = readlineSync.question("May I have your name? ");
   console.log(`Hello, ${name}!`);
+  getMission()
   getGameOver(name, playRound);
 };
 

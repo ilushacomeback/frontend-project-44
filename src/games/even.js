@@ -3,7 +3,6 @@ import sayHello from "../index.js";
 
 const playRound = (name) => {
   const number = Math.floor(Math.random() * 100);
-  console.log('Answer "yes" if the number is even, otherwise answer "no". ');
   console.log(`Question: ${number}`);
   const answerPlayer = readlineSync.question("Your answer: ");
   const currentAnswer = number % 2 === 0 ? "yes" : "no";
@@ -18,8 +17,12 @@ const playRound = (name) => {
   }
 };
 
+const getMission = () => {
+  console.log('Answer "yes" if the number is even, otherwise answer "no". ');
+}
+
 const play = () => {
-  sayHello(playRound);
+  sayHello(playRound, getMission);
 };
 
 export default play;
