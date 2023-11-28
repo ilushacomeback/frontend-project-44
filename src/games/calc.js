@@ -1,7 +1,7 @@
 import readlineSync from "readline-sync";
 import sayHello from "../index.js";
 
-const answer = (numberOne, randomOperation, numberTwo) => {
+const getResult = (numberOne, randomOperation, numberTwo) => {
   switch (randomOperation) {
     case "+":
       return numberOne + numberTwo;
@@ -25,7 +25,7 @@ const playRound = (name) => {
   console.log(`Question: ${question}`);
 
   const answerPlayer = readlineSync.question("Your answer: ");
-  const answerCorrect = answer(numberOne, randomOperation, numberTwo);
+  const answerCorrect = getResult(numberOne, randomOperation, numberTwo);
   const isCorrectAnswer = answerCorrect.toString() === answerPlayer.toString();
 
   if (isCorrectAnswer) {
