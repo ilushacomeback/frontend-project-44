@@ -11,7 +11,7 @@ const playRound = (name) => {
     return true;
   }
   console.log(
-    `'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`,
+    `'${answerPlayer}' is wrong answer ;(. Correct answer was '${currentAnswer}'.\nLet's try again, ${name}!`,
   );
   return false;
 };
