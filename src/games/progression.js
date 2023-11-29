@@ -1,5 +1,5 @@
-import readlineSync from "readline-sync";
-import sayHello from "../index.js";
+import readlineSync from 'readline-sync';
+import sayHello from '../index.js';
 
 const getRandomNumber = (min, max) => {
   const minNumber = Math.ceil(min);
@@ -21,27 +21,26 @@ const playRound = (name) => {
   const randomIndex = getRandomNumber(0, progressionNumbers.length);
   const hiddenNumber = progressionNumbers[randomIndex];
   const answerCorrect = hiddenNumber;
-  progressionNumbers[randomIndex] = "..";
+  progressionNumbers[randomIndex] = '..';
 
-  const question = progressionNumbers.join(" ");
+  const question = progressionNumbers.join(' ');
   console.log(`Question: ${question}`);
 
-  const answerPlayer = readlineSync.question("Your answer: ");
+  const answerPlayer = readlineSync.question('Your answer: ');
   const isCorrectAnswer = answerCorrect.toString() === answerPlayer.toString();
 
   if (isCorrectAnswer) {
-    console.log("Correct!");
+    console.log('Correct!');
     return true;
-  } else {
-    console.log(
-      `'${answerPlayer}' is wrong answer ;(. Correct answer was '${answerCorrect}'.Let's try again, ${name}!`
-    );
-    return false;
   }
+  console.log(
+    `'${answerPlayer}' is wrong answer ;(. Correct answer was '${answerCorrect}'.Let's try again, ${name}!`,
+  );
+  return false;
 };
 
 const getMission = () => {
-  console.log("What number is missing in the progression?");
+  console.log('What number is missing in the progression?');
 };
 
 const play = () => {

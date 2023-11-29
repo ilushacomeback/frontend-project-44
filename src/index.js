@@ -1,4 +1,4 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 const getGameOver = (name, playRound) => {
   for (let i = 0; i < 3; i += 1) {
@@ -11,10 +11,10 @@ const getGameOver = (name, playRound) => {
 };
 
 const sayHello = (playRound, getMission) => {
-  console.log("Welcome to the Brain Games!");
-  const name = readlineSync.question("May I have your name? ");
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  getMission()
+  getMission();
   getGameOver(name, playRound);
 };
 

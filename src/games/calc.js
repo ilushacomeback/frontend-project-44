@@ -1,20 +1,26 @@
-import readlineSync from "readline-sync";
-import sayHello from "../index.js";
+import readlineSync from 'readline-sync';
+import sayHello from '../index.js';
 
 const getResult = (numberOne, randomOperation, numberTwo) => {
+  let result = 0;
   switch (randomOperation) {
-    case "+":
-      return numberOne + numberTwo;
-    case "-":
-      return numberOne - numberTwo;
-    case "*":
-      return numberOne * numberTwo;
+    case '+':
+      result = numberOne + numberTwo;
+      break;
+    case '-':
+      result = numberOne - numberTwo;
+      break;
+    case '*':
+      result = numberOne * numberTwo;
+      break;
     default:
+      break;
   }
+  return result;
 };
 
 const playRound = (name) => {
-  const operations = ["+", "-", "*"];
+  const operations = ['+', '-', '*'];
   const numberOne = Math.floor(Math.random() * 10);
   const numberTwo = Math.floor(Math.random() * 10);
   const indexRandom = Math.floor(Math.random() * 3);
@@ -23,23 +29,22 @@ const playRound = (name) => {
 
   console.log(`Question: ${question}`);
 
-  const answerPlayer = readlineSync.question("Your answer: ");
+  const answerPlayer = readlineSync.question('Your answer: ');
   const answerCorrect = getResult(numberOne, randomOperation, numberTwo);
   const isCorrectAnswer = answerCorrect.toString() === answerPlayer.toString();
 
   if (isCorrectAnswer) {
-    console.log("Correct!");
+    console.log('Correct!');
     return true;
-  } else {
-    console.log(
-      `'${answerPlayer}' is wrong answer ;(. Correct answer was '${answerCorrect}'.Let's try again, ${name}!`
-    );
-    return false;
   }
+  console.log(
+    `'${answerPlayer}' is wrong answer ;(. Correct answer was '${answerCorrect}'.Let's try again, ${name}!`,
+  );
+  return false;
 };
 
 const getMission = () => {
-  console.log("What is the result of the expression?");
+  console.log('What is the result of the expression?');
 };
 
 const play = () => {
