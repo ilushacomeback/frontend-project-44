@@ -3,7 +3,7 @@ import sayHello from "../index.js";
 
 const isPrime = (randomNumber) => {
   if (randomNumber === 1) {
-    console.log("Oops, write 'yes' please");
+    return "no";
   }
 
   for (let i = 2; i < randomNumber; i += 1) {
@@ -13,6 +13,8 @@ const isPrime = (randomNumber) => {
   }
   return "yes";
 };
+
+console.log(isPrime(1))
 
 const playRound = (name) => {
   const randomNumber = Math.floor(Math.random() * 100);
