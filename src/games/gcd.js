@@ -35,7 +35,7 @@ const playRound = (name) => {
 };
 
 const getMission = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no". ');
+  console.log("Find the greatest common divisor of given numbers.");
 };
 
 const play = () => {
