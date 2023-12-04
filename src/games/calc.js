@@ -24,11 +24,9 @@ const playRound = (name) => {
   const numberTwo = Math.floor(Math.random() * 10);
   const indexRandom = Math.floor(Math.random() * 3);
   const randomOperation = operations[indexRandom];
-
   const question = `${numberOne} ${randomOperation} ${numberTwo}`;
   const answerPlayer = getQuestion(question);
   const answerCorrect = getResult(numberOne, randomOperation, numberTwo).toString();
-
   const isCorrect = isCorrectAnswer(answerPlayer, answerCorrect, name);
   return isCorrect;
 };
