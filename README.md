@@ -12,7 +12,7 @@
 
 ### Демонстрация установки "Игры разума":
 
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/2ICY2Ye0fYBuEg5Go8bN6R9eo)
+[![asciicast](https://asciinema.org/a/2ICY2Ye0fYBuEg5Go8bN6R9eo.png)](https://asciinema.org/a/2ICY2Ye0fYBuEg5Go8bN6R9eo)
 
 
 ## Правила игр:
@@ -28,7 +28,7 @@
 
 ### Демонстрация:
 
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/ciIP8HJMrFUSsMy2vC6i0Xfu1)
+[![asciicast](https://asciinema.org/a/ciIP8HJMrFUSsMy2vC6i0Xfu1.png)](https://asciinema.org/a/ciIP8HJMrFUSsMy2vC6i0Xfu1)
 
 ## Игра "Калькулятор"
 
@@ -38,7 +38,7 @@
 
 ### Демонстрация:
 
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/JY9pC89w7czqe1GyoSTWvk3aS)
+[![asciicast](https://asciinema.org/a/JY9pC89w7czqe1GyoSTWvk3aS.png)](https://asciinema.org/a/JY9pC89w7czqe1GyoSTWvk3aS)
 
 ## Игра "НОД"
 
@@ -48,7 +48,7 @@
 
 ### Демонстрация:
 
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/PNtrgG0lgH8ORQ9J9xxMzZr64)
+[![asciicast](https://asciinema.org/a/PNtrgG0lgH8ORQ9J9xxMzZr64.png)](https://asciinema.org/a/PNtrgG0lgH8ORQ9J9xxMzZr64)
 
 ## Игра "Прогрессия"
 
@@ -58,7 +58,7 @@
 
 ### Демонстрация:
 
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/0VkaijQGkJNwn8E9P8bryPIsE)
+[![asciicast](https://asciinema.org/a/0VkaijQGkJNwn8E9P8bryPIsE.png)](https://asciinema.org/a/0VkaijQGkJNwn8E9P8bryPIsE)
 
 ## Игра "Простое ли число?"
 
@@ -68,4 +68,4 @@
 
 ### Демонстрация:
 
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/Jp4VxmqqJQEPn7mbgkVTXphAK)
+[![asciicast](https://asciinema.org/a/Jp4VxmqqJQEPn7mbgkVTXphAK.png)](https://asciinema.org/a/Jp4VxmqqJQEPn7mbgkVTXphAK)
