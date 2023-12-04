@@ -3,45 +3,69 @@
 
 <a href="https://codeclimate.com/github/ilushacomeback/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/9a780c4990692b1a8304/maintainability" /></a>
 
-Для установки необходимо: 
+# Игры разума
+
+## Для установки необходимо: 
 1. Клонировать репозиторий
 2. Установить npm (команда make install из корневого файла)
 3. Создать локальную связь (команда npm link)
 
-Демонстрация установки "Игры разума":
-https://asciinema.org/a/2ICY2Ye0fYBuEg5Go8bN6R9eo
+### Демонстрация установки "Игры разума":
 
-Правила игр:
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/2ICY2Ye0fYBuEg5Go8bN6R9eo)
+
+
+## Правила игр:
 1. Игра идет до трех правильных ответов
 2. Если вы ошиблись, то игра заканчивается
 
 
-Игра "Проверка на четность":
+## Игра "Проверка на четность":
+
 Запуск игры: brain-even
+
 Необходимо определить четное ли число. Ответьте «yes», если число четное, иначе ответьте «no». 
-Демонстрация:
-https://asciinema.org/a/ciIP8HJMrFUSsMy2vC6i0Xfu1
 
-Игра "Калькулятор"
+### Демонстрация:
+
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/ciIP8HJMrFUSsMy2vC6i0Xfu1)
+
+## Игра "Калькулятор"
+
 Запуск игры: brain-calc
+
 Необходимо высчитать арифметическое выражение
-Демонстрация:
-https://asciinema.org/a/JY9pC89w7czqe1GyoSTWvk3aS
 
-Игра "НОД"
+### Демонстрация:
+
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/JY9pC89w7czqe1GyoSTWvk3aS)
+
+## Игра "НОД"
+
 Запуск игры: brain-gcd
+
 Необходимо найти наибольший общий делитель заданных чисел.
-Демонстрация:
-https://asciinema.org/a/PNtrgG0lgH8ORQ9J9xxMzZr64
 
-Игра "Прогрессия"
+### Демонстрация:
+
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/PNtrgG0lgH8ORQ9J9xxMzZr64)
+
+## Игра "Прогрессия"
+
 Запуск игры: brain-progression
-Необходимо определить какого числа не хватает в прогрессии.
-Демонстрация:
-https://asciinema.org/a/0VkaijQGkJNwn8E9P8bryPIsE
 
-Игра "Простое ли число?"
+Необходимо определить какого числа не хватает в прогрессии.
+
+### Демонстрация:
+
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/0VkaijQGkJNwn8E9P8bryPIsE)
+
+## Игра "Простое ли число?"
+
 Запуск игры: brain-prime
+
 Необходимо определить простое ли число. Ответьте «yes», если число простое, иначе ответьте «no».
-Демонстрация:
-https://asciinema.org/a/Jp4VxmqqJQEPn7mbgkVTXphAK
+
+### Демонстрация:
+
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/Jp4VxmqqJQEPn7mbgkVTXphAK)
