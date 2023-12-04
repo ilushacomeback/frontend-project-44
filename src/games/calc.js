@@ -1,5 +1,4 @@
-import readlineSync from 'readline-sync';
-import sayHello from '../index.js';
+import { sayHello, isCorrectAnswer, getQuestion } from '../index.js';
 
 const getResult = (numberOne, randomOperation, numberTwo) => {
   let result = 0;
@@ -25,30 +24,18 @@ const playRound = (name) => {
   const numberTwo = Math.floor(Math.random() * 10);
   const indexRandom = Math.floor(Math.random() * 3);
   const randomOperation = operations[indexRandom];
+
   const question = `${numberOne} ${randomOperation} ${numberTwo}`;
+  const answerPlayer = getQuestion(question);
+  const answerCorrect = getResult(numberOne, randomOperation, numberTwo).toString();
 
-  console.log(`Question: ${question}`);
-
-  const answerPlayer = readlineSync.question('Your answer: ');
-  const answerCorrect = getResult(numberOne, randomOperation, numberTwo);
-  const isCorrectAnswer = answerCorrect.toString() === answerPlayer.toString();
-
-  if (isCorrectAnswer) {
-    console.log('Correct!');
-    return true;
-  }
-  console.log(
-    `'${answerPlayer}' is wrong answer ;(. Correct answer was '${answerCorrect}'.Let's try again, ${name}!`,
-  );
-  return false;
-};
-
-const getMission = () => {
-  console.log('What is the result of the expression?');
+  const isCorrect = isCorrectAnswer(answerPlayer, answerCorrect, name);
+  return isCorrect;
 };
 
 const play = () => {
-  sayHello(playRound, getMission);
+  const mission = 'What is the result of the expression?';
+  sayHello(playRound, mission);
 };
 
 export default play;

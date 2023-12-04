@@ -1,5 +1,4 @@
-import readlineSync from 'readline-sync';
-import sayHello from '../index.js';
+import { sayHello, isCorrectAnswer, getQuestion } from '../index.js';
 
 const findNod = (num1, num2) => {
   let number1 = num1;
@@ -17,30 +16,16 @@ const findNod = (num1, num2) => {
 const playRound = (name) => {
   const number1 = Math.ceil(Math.random() * 100);
   const number2 = Math.ceil(Math.random() * 100);
-
-  console.log(`Question: ${number1} ${number2}`);
-
-  const answerPlayer = readlineSync.question('Your answer: ');
-
-  const answerCorrect = findNod(number1, number2);
-  const isCorrectAnswer = answerPlayer.toString() === answerCorrect.toString();
-
-  if (isCorrectAnswer) {
-    console.log('Correct!');
-    return true;
-  }
-  console.log(
-    `'${answerPlayer}' is wrong answer ;(. Correct answer was '${answerCorrect}'.Let's try again, ${name}!`,
-  );
-  return false;
-};
-
-const getMission = () => {
-  console.log('Find the greatest common divisor of given numbers.');
+  const question = `${number1} ${number2}`;
+  const answerPlayer = getQuestion(question);
+  const answerCorrect = findNod(number1, number2).toString();
+  const isCorrect = isCorrectAnswer(answerPlayer, answerCorrect, name);
+  return isCorrect;
 };
 
 const play = () => {
-  sayHello(playRound, getMission);
+  const mission = 'Find the greatest common divisor of given numbers.';
+  sayHello(playRound, mission);
 };
 
 export default play;

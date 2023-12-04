@@ -10,12 +10,33 @@ const getGameOver = (name, playRound) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-const sayHello = (playRound, getMission) => {
+const getMission = (mission) => {
+  console.log(`${mission}`);
+};
+
+const sayHello = (playRound, mission) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  getMission();
+  getMission(mission);
   getGameOver(name, playRound);
 };
 
-export default sayHello;
+const isCorrectAnswer = (answerPlayer, answerCorrect, name) => {
+  if (answerCorrect === answerPlayer) {
+    console.log('Correct!');
+    return true;
+  }
+  console.log(
+    `'${answerPlayer}' is wrong answer ;(. Correct answer was '${answerCorrect}'.\nLet's try again, ${name}!`,
+  );
+  return false;
+};
+
+const getQuestion = (question) => {
+  console.log(`Question: ${question}`);
+  const answerPlayer = readlineSync.question('Your answer: ');
+  return answerPlayer;
+};
+
+export { sayHello, isCorrectAnswer, getQuestion };
